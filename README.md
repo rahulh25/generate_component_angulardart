@@ -3,7 +3,7 @@ This python script helps you generate a component for your angulardart project (
 
 <b>PS:</b> Although you can change the folder name by using -p in the ngdart command it does not create the css file and also creates a /lib/src folder inside the folder where you wish to create the component. This file is more in line with what the <i>ng generate component</i> command for Angular with typescript feels like. 
 
-<b>If in future there are any changes in the <i>ngdart generate component</i> command please refer to that. This code will howerver work in that case as well.</b>
+<b>If in future there are any changes in the <i>ngdart generate component</i> command please refer to that. This code will howerver work in any case.</b>
 
 ## Steps to use the script
 
