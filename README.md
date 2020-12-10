@@ -1,0 +1,2 @@
+# generate_component_angulardart
+This python script helps you generate a component for your angulardart project (instead of using the traditional ngdart generate component command). This will create the html, css and the dart file with some general boilerplate for the dart and the html file. This will also create a folder in the lib/src folder of your project for the component with all the files instead of just generally creating the html and dart file in the lib/src folder as done by the ngdart generate component command.
