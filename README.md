@@ -35,7 +35,7 @@ create-component <component_name> [<subfolder_name>]
 
 You will see that it creates a component folder under /lib/src or under /lib/src/subfolder_name with all your html, dart and css files.
 
-# Examples of using the command
+## Examples of using the command
 
 1. Using it with just the component_name:
 
