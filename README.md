@@ -58,7 +58,7 @@ create-component home main/page
 
 ## Note
 
-If you wish to create your own name for the command instead of <b><i>create-component</i></b> command then once you clone/download the repository you can change the python(createcomp) file name and give it whatever name you like and you can call that command(file name) when creating the components
+If you wish to create your own name for the command instead of <b><i>create-component</i></b> command then once you clone/download the repository you can change the python(create-component) file name and give it whatever name you like and you can call that command(file name) when creating the components
 
 ## Reference
 
