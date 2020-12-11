@@ -4,8 +4,13 @@ import argparse, sys,os
 class Solution:
     def __init__(self):
         self.component_name=''
+        self.sub_folder_name=None
+        self.sub_folder_given=False
         if self.create_arguments():
-            directory_name=os.path.join(os.getcwd(),'lib','src',self.component_name)
+            if self.sub_folder_given:
+                directory_name=os.path.join(os.getcwd(),'lib','src',self.sub_folder_name,self.component_name)
+            else:
+                directory_name=os.path.join(os.getcwd(),'lib','src',self.component_name)
             result=self.create_directory(directory_name)
             if result=='exists':
                 print("Component already exists")
@@ -18,7 +23,7 @@ class Solution:
                 if self.create_dart_file(directory_name,self.component_name,dartfilename,htmlfilename,cssfilename):
                     if self.create_html_file(directory_name,htmlfilename):
                         if self.create_css_file(directory_name,cssfilename):
-                            print("Component created at location ",directory_name)
+                            print("Component created")
                         else:
                             print("Error creating css file")
                     else:
@@ -75,6 +80,10 @@ class Solution:
             return False
         elif len(sys.argv)==2:
             self.component_name=sys.argv[1]
+        elif len(sys.argv)==3:
+            self.component_name=sys.argv[1]
+            self.sub_folder_name=sys.argv[2]
+            self.sub_folder_given=True
         else:
             return False
         return True

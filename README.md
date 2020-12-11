@@ -12,10 +12,10 @@ This python script helps you generate a component for your angulardart project (
 3. Once you open the terminal run the following command:
 
 ```bash
-cp myecho ~/bin
+cp create-component ~/bin
 ```
 
-Note: If you get an error in the above command run the below command first:
+<b>Note: If you get an error in the above command run the below command first:</b>
 
 ```bash
 mkdir -p ~/bin
@@ -30,14 +30,35 @@ export PATH=$PATH":$HOME/bin"
 5. Once all the above steps have been executed successfully you can run the following command in your AngularDart project folder tp create a component:
 
 ```bash
-createcomp <component_name>
+create-component <component_name> [<subfolder_name>]
 ```
 
-You will see that it creates a component folder under /lib/src with all your html, dart and css files.
+You will see that it creates a component folder under /lib/src or under /lib/src/subfolder_name with all your html, dart and css files.
+
+# Examples of using the command
+
+1. Using it with just the component_name:
+
+```bash
+create-component home
+```
+
+2. Creating inside a subfolder
+
+```bash
+create-component home main
+```
+
+3. Creating the component within multiple subfolders
+
+```bash
+create-component home main/page
+```
+
 
 ## Note
 
-If you wish to create your own name for the command instead of <b><i>createcomp</i></b> command then once you clone/download the repository you can change the python(createcomp) file name and give it whatever name you like and you can call that command(file name) when creating the components
+If you wish to create your own name for the command instead of <b><i>create-component</i></b> command then once you clone/download the repository you can change the python(createcomp) file name and give it whatever name you like and you can call that command(file name) when creating the components
 
 ## Reference
 
