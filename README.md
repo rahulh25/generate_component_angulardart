@@ -1,9 +1,12 @@
 # Generate Angular Components for Angular Dart
 This python script helps you generate a component for your angulardart project (instead of using the traditional ngdart generate component command). This will create the html, css and the dart file with some general boilerplate for the dart and the html file. This also creates a folder in the lib/src folder of your project for the component with all the files, instead of just generally creating the html and dart file in the lib/src folder as done by the ngdart generate component command.
 
-<b>PS: Although you can change the folder name by using -p in the ngdart command it does not create the css file and you also have to manually create the subfolder inside the main folder where you wish to create the component. This file is more in line with what the <i>ng generate component</i> command for Angular with typescript feels like. If in future there are any changes in the <i>ngdart generate component</i> command please refer to that. This code will howerver work in any case.</b>
+<h6>
+<b>Although you can change the folder name by using -p in the ngdart command it does not create the css file and you also have to manually create the subfolder inside the main folder where you wish to create the component. This file is more in line with what the <i>ng generate component</i> command for Angular with typescript feels like. If in future there are any changes in the <i>ngdart generate component</i> command please refer to that. This code will howerver work in any case.</b>
 
-<b>If you wish to use the command directly just copy the compiled folder to your C drive and add the path to the dist folder in your environment variables</b>
+<h5>
+<b><i>If you wish to use the command directly just copy the compiled folder to your C drive and add the path to the dist folder in your environment variables</i></b>
+</h5>
 
 ## Steps to use the script
 
@@ -37,7 +40,7 @@ You will see that it creates a component folder under /lib/src or under /lib/src
 
 ## Examples of using the command
 
-(For Windows make sure you are still running the commands using <i>git bash</i>)
+<h6>(For Windows make sure you are still running the commands using <i>git bash</i>)</h6>
 
 1. Using it with just the component_name:
 
@@ -99,7 +102,7 @@ create-component.exe <component_name> [<subfolder_name>]
 
 ## Examples of using the command with above steps
 
-(For Windows make sure you are still running the commands using <i>git bash</i>)
+<h6>(For Windows make sure you are still running the commands using <i>git bash</i>)</h6>
 
 1. Using it with just the component_name:
 
@@ -126,9 +129,12 @@ If you wish to create your own name for the command instead of <b><i>create-comp
 ## Reference
 
 1. Making command line python script <br>
-    https://dbader.org/blog/how-to-make-command-line-commands-with-python
+   https://dbader.org/blog/how-to-make-command-line-commands-with-python
 
 2. Download git bash for windows <br>
-    https://git-scm.com/downloads
+   https://git-scm.com/downloads
+    
+3. Create Python Executable file <br>
+   https://datatofish.com/executable-pyinstaller/
 
 
